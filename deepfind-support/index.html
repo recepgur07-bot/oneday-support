@@ -1,0 +1,224 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>DeepFind Destek / Support</title>
+<style>
+  :root { color-scheme: light; }
+  body {
+    margin: 0;
+    padding: 28px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    background: #f5f7fb;
+    color: #1f2937;
+  }
+  main {
+    max-width: 860px;
+    margin: 0 auto;
+    padding: 28px;
+    background: #ffffff;
+    border-radius: 14px;
+    box-shadow: 0 3px 16px rgba(0, 0, 0, 0.08);
+  }
+  h1, h2, h3 { margin: 0 0 12px; }
+  h1 { font-size: 28px; }
+  h2 { margin-top: 24px; font-size: 20px; }
+  h3 { margin-top: 18px; font-size: 16px; }
+  p, li { line-height: 1.65; }
+  ul, ol { margin: 8px 0 0 20px; }
+  .meta { color: #6b7280; font-size: 14px; margin-bottom: 16px; }
+  a { color: #0b63ce; text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  hr { border: none; border-top: 1px solid #e5e7eb; margin: 28px 0; }
+  .faq-q { font-weight: 600; margin-top: 16px; }
+</style>
+</head>
+<body>
+<main>
+
+<h1>DeepFind Destek</h1>
+<div class="meta">Son güncelleme: 1 Eylül 2026</div>
+
+<p>DeepFind, seçtiğiniz klasörlerdeki belgeleri aramanızı sağlayan,
+tamamen cihazınızda çalışan bir macOS uygulamasıdır. Aşağıda en sık
+sorulan sorular ve klasör izinlerinin nasıl çalıştığı açıklanır.</p>
+
+<h2>Sık sorulan sorular</h2>
+
+<p class="faq-q">Klasör eklediğimde indeksleme ne kadar sürer?</p>
+<p>Süre klasördeki dosya sayısına ve boyutuna bağlıdır — küçük bir
+arşiv (birkaç yüz belge) genellikle birkaç dakika içinde taranır, çok
+büyük arşivlerde (on binlerce dosya) bu süre daha uzun olabilir.
+Tarama arka planda çalışır; <strong>kelime araması indeksleme sürerken
+de tam olarak çalışır</strong>, henüz taranmamış dosyalar sırayla
+eklenir. Ana pencerede ilerleme durumu ("412 / 1.230 belge") sürekli
+görünür, böylece taramanın bitip bitmediğini anlamak için Ayarlar'ı
+açmanız gerekmez.</p>
+
+<p class="faq-q">DeepFind OCR (taranmış/görsel PDF'lerden metin
+çıkarma) yapıyor mu?</p>
+<p>Hayır, şu an için yapmıyor. DeepFind metin katmanı olan belgeleri
+(gerçek metin içeren PDF, DOCX, RTF, XLSX, PPTX, CSV, HTML, TXT,
+Markdown) arar. Yalnız taranmış sayfa görüntüsünden oluşan bir PDF'te
+(görselin arkasında metin katmanı yoksa) arama sonuç vermez. OCR
+desteği ileride değerlendirilebilecek bir özellik ama bugünkü sürümün
+kapsamında değil.</p>
+
+<p class="faq-q">Anlamsal arama nedir, nasıl açılır?</p>
+<p>Anlamsal arama, aradığınız kelime belgede birebir geçmese bile
+anlamca yakın bölümleri bulmanızı sağlar (örneğin "kadastro" araması
+"tapu haritalarının arşivlenmesi" geçen bir paragrafı da
+gösterebilir). Bu özellik varsayılan olarak <strong>kapalıdır</strong>;
+Ayarlar → Arama sekmesinden açabilirsiniz. Açtığınızda arşivinizin
+arka planda bir kere hazırlanması (vektörlenmesi) gerekir — bu sırada
+da kelime araması kesintisiz çalışmaya devam eder. Hazırlık tamamen
+cihazınızda yapılır, hiçbir belge içeriği internete gönderilmez.</p>
+
+<p class="faq-q">Anlamsal arama Türkçe-İngilizce karışık arşivlerde
+çalışır mı?</p>
+<p>Evet, kullanılan model çok dillidir ve Türkçe bir sorguyla İngilizce
+bir belgeyi (veya tam tersini) bulabilir. Bu yetenek ölçülmüştür ama
+henüz geniş bir arşivde kalibre edilmemiştir; bu yüzden bazı çapraz
+dil eşleşmeleri bugünkü hassasiyet ayarında gösterilmeyebilir. Zamanla
+iyileştirilecek bir alandır.</p>
+
+<p class="faq-q">Belgelerim veya arama sorgularım herhangi bir sunucuya
+gönderiliyor mu?</p>
+<p>Hayır. DeepFind ağ erişimi istemez ve kullanmaz — bu, uygulamanın
+App Sandbox izinlerinde ağ entitlement'ının hiç bulunmamasıyla
+kanıtlanmıştır. Arama dizini, tercihleriniz ve (açıksa) anlamsal arama
+modeli tamamen cihazınızda kalır. Ayrıntı için
+<a href="https://recepgur07-bot.github.io/oneday-support/deepfind-privacy">Gizlilik Politikası</a>'na bakabilirsiniz.</p>
+
+<p class="faq-q">7 günlük deneme bitti, satın alma ekranını
+göremiyorum / satın alma başarısız oluyor.</p>
+<p>Deneme süresi dolduğunda uygulama satın alma ekranını otomatik
+gösterir. Ekran görünmüyorsa uygulamayı kapatıp yeniden açmayı deneyin.
+Satın alma sırasında bir hata alırsanız (ödeme yöntemi reddi, App
+Store bağlantı sorunu vb.) App Store'un kendi hata mesajı gösterilir;
+sorun devam ederse
+<a href="mailto:seslerinizindeapps@outlook.com">bize yazın</a>.
+Daha önce satın aldıysanız ve yeni bir cihaza geçtiyseniz, satın alma
+ekranındaki veya Ayarlar'daki "Satın Alımları Geri Yükle" seçeneğini
+kullanmanız yeterlidir — aynı Apple Hesabıyla giriş yapılmış olmalıdır.</p>
+
+<h2>Klasör izinleri nasıl çalışır?</h2>
+<p>macOS, güvenlik nedeniyle uygulamaların yalnızca kullanıcının
+açıkça izin verdiği klasörlere erişmesine izin verir (buna "App
+Sandbox" denir). DeepFind bunu şöyle kullanır:</p>
+<ul>
+  <li>Bir klasör eklediğinizde macOS size standart bir "Aç" penceresi
+  gösterir; yalnız orada seçtiğiniz klasöre (ve alt klasörlerine)
+  erişim verilir.</li>
+  <li>Bu izin, güvenli ve kaldırılabilir bir "yer imi" (security-scoped
+  bookmark) olarak saklanır — DeepFind, izin vermediğiniz hiçbir
+  klasöre erişemez, seçtiğiniz klasörün dışına da çıkamaz.</li>
+  <li>Bir klasörü listeden kaldırdığınızda erişim de birlikte geri
+  alınır; dosyalarınıza hiçbir şekilde dokunulmamış olur, yalnız
+  DeepFind'ın o klasörü görme izni sona erer.</li>
+  <li>Uygulamayı yeniden açtığınızda macOS bazen aynı klasör için
+  izni yeniden onaylamanızı isteyebilir — bu, sisteminizin normal
+  güvenlik davranışıdır, DeepFind'a özgü bir sorun değildir.</li>
+</ul>
+
+<h2>İletişim</h2>
+<p>Yukarıdaki sorulardan hiçbiri sorununuzu çözmediyse:
+<a href="mailto:seslerinizindeapps@outlook.com">seslerinizindeapps@outlook.com</a></p>
+
+<hr>
+
+<h1>DeepFind Support</h1>
+<div class="meta">Last updated: September 1, 2026</div>
+
+<p>DeepFind is a macOS app that lets you search documents in folders
+you choose — entirely on your device. Below are the most common
+questions and an explanation of how folder permissions work.</p>
+
+<h2>Frequently asked questions</h2>
+
+<p class="faq-q">How long does indexing take after I add a folder?</p>
+<p>It depends on how many files are in the folder and how large they
+are — a small archive (a few hundred documents) is usually indexed
+within a few minutes; very large archives (tens of thousands of files)
+can take longer. Indexing runs in the background, and
+<strong>keyword search works fully while indexing is still in
+progress</strong> — files that haven't been scanned yet are simply
+added as they finish. A progress indicator ("412 / 1,230 documents")
+stays visible in the main window, so you don't need to open Settings
+to check whether indexing has finished.</p>
+
+<p class="faq-q">Does DeepFind do OCR (extracting text from scanned or
+image-only PDFs)?</p>
+<p>Not currently. DeepFind searches documents that already have a text
+layer (PDF, DOCX, RTF, XLSX, PPTX, CSV, HTML, TXT, Markdown with real
+text content). A PDF made only of scanned page images, with no text
+layer behind the image, will not produce search results. OCR support
+may be considered for a future release but is outside the current
+version's scope.</p>
+
+<p class="faq-q">What is semantic search, and how do I turn it on?</p>
+<p>Semantic search finds passages that are related in meaning even
+when your exact search term doesn't appear in the text (for example,
+searching "land registry" could surface a paragraph about "archiving
+title deed maps"). This feature is <strong>off by default</strong>;
+turn it on from Settings → Search. The first time you enable it, your
+archive needs a one-time background preparation step (embedding) —
+keyword search keeps working without interruption while this happens.
+Preparation runs entirely on your device; no document content is ever
+sent over the internet.</p>
+
+<p class="faq-q">Does semantic search work across Turkish/English
+mixed archives?</p>
+<p>Yes — the model is multilingual and can match a Turkish query
+against an English document (or vice versa). This capability has been
+measured but not yet calibrated against a large real-world archive, so
+some cross-language matches may not surface at today's sensitivity
+setting. This is an area we expect to keep improving.</p>
+
+<p class="faq-q">Are my documents or search queries sent to any
+server?</p>
+<p>No. DeepFind does not request or use network access — this is
+verified by the app's App Sandbox entitlements, which contain no
+networking entitlement at all. Your search index, preferences, and (if
+enabled) the semantic search model all stay entirely on your device.
+See the <a href="https://recepgur07-bot.github.io/oneday-support/deepfind-privacy">Privacy Policy</a> for details.</p>
+
+<p class="faq-q">My 7-day trial ended and I don't see the purchase
+screen / the purchase failed.</p>
+<p>When the trial ends, the app shows the purchase screen
+automatically. If it doesn't appear, try quitting and reopening the
+app. If a purchase attempt fails (payment declined, App Store
+connectivity issue, etc.), the App Store's own error message is shown;
+if the problem persists,
+<a href="mailto:seslerinizindeapps@outlook.com">contact us</a>.
+If you already purchased and switched to a new device, use "Restore
+Purchases" on the purchase screen or in Settings while signed in to
+the same Apple Account you purchased with.</p>
+
+<h2>How do folder permissions work?</h2>
+<p>For security, macOS only lets an app access folders the user has
+explicitly approved (this is called "App Sandbox"). DeepFind uses this
+as follows:</p>
+<ul>
+  <li>When you add a folder, macOS shows you a standard "Open" panel;
+  only the folder you select there (and its subfolders) is granted
+  access.</li>
+  <li>This permission is stored as a secure, revocable "bookmark"
+  (security-scoped bookmark) — DeepFind cannot access any folder you
+  haven't granted, and cannot reach outside the folder you selected.</li>
+  <li>Removing a folder from the list also revokes access immediately;
+  your files are never touched — only DeepFind's permission to see
+  that folder ends.</li>
+  <li>When you reopen the app, macOS may occasionally ask you to
+  reconfirm permission for the same folder — this is normal system
+  security behavior, not a DeepFind-specific issue.</li>
+</ul>
+
+<h2>Contact</h2>
+<p>If none of the above answered your question:
+<a href="mailto:seslerinizindeapps@outlook.com">seslerinizindeapps@outlook.com</a></p>
+
+</main>
+</body>
+</html>
